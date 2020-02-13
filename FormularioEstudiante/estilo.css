@@ -2,14 +2,16 @@
 h1{
     text-align: center;
     color: aliceblue;
+    line-height: 159px;
 }
 div{
     text-align: center; /*Centrar todos los cuadros de texto*/
 }
 
 body {
-    background-image: url('Fondo3.jpg');/*Imagen de fondo*/
+    background-image: url('Fondo4.jpg');/*Imagen de fondo*/
 }
+
 body{
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
@@ -27,7 +29,6 @@ input{
 input[type=submit],
 input[type=button],
 input[type=file]{
-    text-align: center;
     background-color: rgb(61, 49, 235);
     color: #FFF;
     text-transform: uppercase;
@@ -37,25 +38,20 @@ input[type=file]{
 input[type=submit]:hover,
 input[type=button]:hover,
 input[type=file]:hover{
-    text-align: center;
     color:  rgba(102, 248, 72, 0.863);
     background-color: #FFF;
 }
 input[type=text]:invalid,
-input[type=date]:invalid,
 input[type=file]:invalid,
 input[type=url]:invalid,
 input[type=tel]:invalid{
-    text-align: center;
     background-color: rgb(41, 223, 214);
     color: black;
 }
 input[type=text]:valid, /* Estilo para los input de tipo text, date y file */
-input[type=date]:valid, /* Cuando es valido su contenido */
 input[type=file]:valid,
 input[type=url]:valid,
 input[type=tel]:valid{
-    text-align: center; /*Centrar texto de los cuadros*/
     background-color: rgb(30, 230, 90);
     color: black;
 }

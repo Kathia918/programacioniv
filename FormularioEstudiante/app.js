@@ -27,7 +27,7 @@ function guardarRegistro(e){
     telefono=document.querySelector("#txttelAlumno").value,
     direccion=document.querySelector("#txtdireccionAlumno").value;
 
-    console.log(nombre, apellido, fecha, telefono, direccion);
+    console.log(nombre, apellido, telefono, direccion);
 
     if( 'localStorage' in window ){
         window.localStorage.setItem("codigo" + codigo, codigo);
@@ -48,14 +48,3 @@ function buscar(){
     document.querySelector("#txtdireccionAlumno").value=window.localStorage.getItem("direccion" + codigo);
 
 }
-
-
-/*document.addEventListener("DOMContentLoaded",function(e){
-    alert("CALLBACK LISTO");
-});*/
-
-/*document.addEventListener("DOMContentLoaded", init);
-
-function init(e){
-    alert("LISTO");
-}*/
