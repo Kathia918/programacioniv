@@ -1,11 +1,13 @@
-
+body {
+    background-image: url('Fonfo3.jpg');/*Imagen de fondo*/
+}
 body{
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 10px;
 }
 body > h1{
-    background-color: brown;
+    background-color: rgb(81, 128, 172);
     margin: 10px;
 }
 input{
