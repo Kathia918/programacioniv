@@ -3,9 +3,12 @@ h1{
     text-align: center;
     color: aliceblue;
 }
+div{
+    text-align: center; /*Centrar todos los cuadros de texto*/
+}
 
 body {
-    background-image: url('Fonfo3.jpg');/*Imagen de fondo*/
+    background-image: url('Fondo3.jpg');/*Imagen de fondo*/
 }
 body{
     font-size: 14px;
@@ -52,7 +55,7 @@ input[type=date]:valid, /* Cuando es valido su contenido */
 input[type=file]:valid,
 input[type=url]:valid,
 input[type=tel]:valid{
-    text-align: center;
+    text-align: center; /*Centrar texto de los cuadros*/
     background-color: rgb(30, 230, 90);
     color: black;
 }
