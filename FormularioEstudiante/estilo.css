@@ -5,6 +5,10 @@ body{
     margin-top: 50px;
 
 }
+
+body {
+    background-image: url('img/Fondo2.jpg');/*Imagen de fondo*/
+}
 /* BY Rosa Daniela Rogriguez Martinez USIS049518
 Kathia Marcela Berrios Ascencio USIS016718*/
 
