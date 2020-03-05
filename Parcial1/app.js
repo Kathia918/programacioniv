@@ -39,18 +39,20 @@ document.addEventListener("DOMContentLoaded", e=>{
         let $res = document.querySelector("#lblRespuesta");
         if(opcion.value == "moneda"){
           $res.innerHTML = `Respuesta: ${ (monedas[a]/monedas[de]*cantidad).toFixed(2) }`;
+
         } else if(opcion.value == "longitud"){
           $res.innerHTML = `Respuesta: ${ (longitudes[a]/longitudes[de]*cantidad).toFixed(2) }`;
         };
+        
     });
   });
   
-  //llenar los select box 
+  //llenar
   function elegir_opcion() {
     let opcion = document.getElementById('cboConvertir'),
     de1 = document.getElementById('cboDe'),
     a1 = document.getElementById('cboA');
-    //limpia antes de actualizar
+    //limpiar
     de1.value="";
     a1.value="";
     de1.innerHTML="";
