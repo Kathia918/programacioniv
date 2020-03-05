@@ -16,6 +16,15 @@ document.addEventListener("DOMContentLoaded", e=>{
             "lempiras":24.36,
             "peso":19.36,
             "bitcoin":0.00026},
+
+            almacenamiento= {
+                "Megabyte":1,
+                "bit":8.388608,
+                "byte":1.048576,
+                "Kilobyte":1.024,
+                "Gigabyte":0.0009765625,
+                "Terabyte":0.00000095367431660625,};
+           
             longitudes = {
               "metro":1,
               "cm": 100,
@@ -25,6 +34,7 @@ document.addEventListener("DOMContentLoaded", e=>{
               "yardas":1.09361,
               "km":0.001,
               "millas":0.000621371,};
+
   
         let $res = document.querySelector("#lblRespuesta");
         if(opcion.value == "moneda"){
