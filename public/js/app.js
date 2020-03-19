@@ -9,6 +9,9 @@ document.addEventListener("DOMContentLoaded",event=>{
         fetch('public/vistas/alumnos/alumnos.html').then( resp=>resp.text() ).then(resp=>{
             $(`#vistas-${modulo}`).innerHTML = resp;
             
+            fetch('public/vistas/docentes/docentes.html').then( resp=>resp.text() ).then(resp=>{
+                $(`#vistas-${modulo}`).innerHTML = resp;
+
             let btnCerrar = $(".close");
             btnCerrar.addEventListener("click",event=>{
                 $(`#vistas-${modulo}`).innerHTML = "";
@@ -19,5 +22,6 @@ document.addEventListener("DOMContentLoaded",event=>{
             script.src = `public/vistas/${modulo}/${modulo}.js`;
             cuerpo.appendChild(script);
         });
+      });
     });
 });
