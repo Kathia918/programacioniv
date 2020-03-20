@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", event => {
     let Docentes = document.getElementById("docentes"); //
 
     //SE AGREGAN LOS EVENTOS LISTENER PARA CADA VISTA
+    //Kathia Berrios
     Alumnos.addEventListener("click", e=>{
         e.stopPropagation();
         let modulo = "alumnos";
@@ -20,7 +21,7 @@ document.addEventListener("DOMContentLoaded", event => {
     });
 }); 
 
-// ESTA FUNCION HACE LA PETICION Y COLOCA LA VISTA SEGUN EL MODULO QUE SE LE HA SIFO ENVIADO
+//PETICION Y COLOCA LA VISTA SEGUN EL MODULO QUE SE LE HA SIDO ENVIADO
  function colocarVista(modulo){
 
     fetch(`public/vistas/${modulo}/${modulo}.html`).then( resp => resp.text()).then( resp => {
