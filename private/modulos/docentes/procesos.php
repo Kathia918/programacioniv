@@ -1,5 +1,5 @@
 <?php 
-include('../../Config/Config.php');
+include('../../config/config.php');
 $docente = new docente($conexion);
 
 $proceso = '';
@@ -36,7 +36,7 @@ class docente{
         if( $this->respuesta['msg']==='correcto' ){
             if( $this->datos['accion']==='nuevo' ){
                 $this->db->consultas('
-                    INSERT INTO docentes (codigo,nombre,direccion,telefono) VALUES(
+                    INSERT INTO docentes (codigo,nombre,direccion ,telefono) VALUES(
                         "'. $this->datos['codigo'] .'",
                         "'. $this->datos['nombre'] .'",
                         "'. $this->datos['direccion'] .'",
