@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", event => {
     
     });
 }); 
-
 //PETICION Y COLOCA LA VISTA SEGUN EL MODULO QUE SE LE HA SIDO ENVIADO
  function colocarVista(modulo){
 
