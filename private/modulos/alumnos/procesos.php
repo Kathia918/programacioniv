@@ -1,9 +1,9 @@
 <?php 
-include('../../config/config.php');
+include('../../Config/Config.php');
 $alumno = new alumno($conexion);
 
 $proceso = '';
-if( isset($_GET['proceso']) && strlen($_GET['proceso'])>1 ){
+if( isset($_GET['proceso']) && strlen($_GET['proceso'])>0 ){
 	$proceso = $_GET['proceso'];
 }
 $alumno->$proceso( $_GET['alumno'] );
