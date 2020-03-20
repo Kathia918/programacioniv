@@ -3,7 +3,7 @@ include('../../config/config.php');
 $alumno = new alumno($conexion);
 
 $proceso = '';
-if( isset($_GET['proceso']) && strlen($_GET['proceso'])>0 ){
+if( isset($_GET['proceso']) && strlen($_GET['proceso'])>1 ){
 	$proceso = $_GET['proceso'];
 }
 $alumno->$proceso( $_GET['alumno'] );
