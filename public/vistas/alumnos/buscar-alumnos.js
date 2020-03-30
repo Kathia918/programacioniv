@@ -3,6 +3,7 @@ export function modulo(){
         frmBuscarAlumnos = $("#txtBuscarAlumno");
     frmBuscarAlumnos.addEventListener('keyup',e=>{
         traerDatos(frmBuscarAlumnos.value);
+        
     });
     let modificarAlumno = (alumno)=>{
         $("#frm-alumnos").dataset.accion = 'modificar';
