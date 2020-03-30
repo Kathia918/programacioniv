@@ -22,7 +22,7 @@ export function modulo(){
             let filas = ''
             resp.forEach(alumno => {
                 filas += `
-                    <tr data-idalumno='${alumno.idAlumno}' data-alumno='${ JSON.stringify(alumno) }'>
+                    <tr data-idalumno='${alumno.idAlumno}' id='${ JSON.stringify(alumno) }'>
                         <td>${alumno.codigo}</td>
                         <td>${alumno.nombre}</td>
                         <td>${alumno.direccion}</td>
@@ -68,7 +68,7 @@ export function modulo(){
             let filas = ''
             resp.forEach(alumno => {
                 filas += `
-                    <tr data-idalumno='${alumno.idAlumno}' data-alumno='${ JSON.stringify(alumno) }'>
+                    <tr data-idalumno='${alumno.idAlumno}' id='${ JSON.stringify(alumno) }'>
                         <td>${alumno.codigo}</td>
                         <td>${alumno.nombre}</td>
                         <td>${alumno.direccion}</td>
