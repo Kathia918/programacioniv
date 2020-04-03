@@ -14,7 +14,7 @@ var appalumno = new Vue({
     },
     methods:{
         guardarAlumno:function(){
-            fetch(`private/modulos/alumnos/procesos.php?proceso=recibirDatos&alumno=${JSON.stringify(this.alumno)}`).then( resp=>resp.json() ).then(resp=>{
+            fetch(`private/Modulos/alumnos/procesos.php?proceso=recibirDatos&alumno=${JSON.stringify(this.alumno)}`).then( resp=>resp.json() ).then(resp=>{
                 this.alumno.msg = resp.msg;
                 this.alumno.idAlumno = 0;
                 this.alumno.codigo = '';
@@ -27,3 +27,4 @@ var appalumno = new Vue({
         }
     }
 });
+
