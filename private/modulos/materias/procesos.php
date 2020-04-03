@@ -27,6 +27,9 @@ class materia{
         if( empty($this->datos['nombre']) ){
             $this->respuesta['msg'] = 'por favor ingrese el nombre de la materia';
         }
+        if( empty($this->datos['descripcion']) ){
+            $this->respuesta['msg'] = 'por favor ingrese la descripcion de la materia';
+        }
         $this->almacenar_materia();
     }
     private function almacenar_materia(){
