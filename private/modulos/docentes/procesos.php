@@ -64,7 +64,7 @@ class docente{
     }
     public function buscarDocente($valor = ''){
         $this->db->consultas('
-            select docentes.idDocentes, docentes.codigo, docentes.nombre, docentes.direccion, docentes.telefono, docentes.DUI
+            select docentes.idDocente, docentes.codigo, docentes.nombre, docentes.direccion, docentes.telefono, docentes.DUI
             from docentes
             where docentes.codigo like "%'. $valor .'%" or docentes.DUI like "%'. $valor .'%"
 
