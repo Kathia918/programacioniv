@@ -1,12 +1,12 @@
 <?php 
 include('../../config/config.php');
-$docente = new materia($conexion);
+$materia = new materia($conexion);
 
 $proceso = '';
 if( isset($_GET['proceso']) && strlen($_GET['proceso'])>0 ){
 	$proceso = $_GET['proceso'];
 }
-$docente->$proceso( $_GET['docente'] );
+$docente->$proceso( $_GET['materia'] );
 print_r(json_encode($docente->respuesta));
 
 class materia{
