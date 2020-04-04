@@ -6,7 +6,7 @@ $proceso = '';
 if( isset($_GET['proceso']) && strlen($_GET['proceso'])>0 ){
 	$proceso = $_GET['proceso'];
 }
-$docente->$proceso( $_GET['materia'] );
+$materia->$proceso( $_GET['materia'] );
 print_r(json_encode($materia->respuesta));
 
 class materia{
@@ -47,7 +47,7 @@ class materia{
                 $this->db->consultas('
                     UPDATE materias SET
                         codigo       = "'. $this->datos['codigo'] .'",
-                        nombre       = "'. $this->datos['nombre'] .'",
+                        nombre       = "'. $this->datos['nombre'] .'"
                         descripcion  = "'. $this->datos['descripcion'] .'"
                     WHERE idMateria = "'. $this->datos['idMateria'] .'"
                 ');
