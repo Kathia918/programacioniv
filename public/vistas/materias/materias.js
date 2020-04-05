@@ -1,4 +1,4 @@
-var appmateria = new Vue({
+var appMateria = new Vue({
     el:'#frm-materias',
     data:{
         materia :{
