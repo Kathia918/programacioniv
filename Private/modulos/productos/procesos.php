@@ -1,3 +1,4 @@
+
 <?php 
 include('../../config/config.php');
 $producto = new producto($conexion);
