@@ -2,7 +2,7 @@
 from facebook_scraper import get_posts
 import csv
 
-face = csv.writer(open('ugb.csv','w'))
+face = csv.writer(open('ugbstore.csv','w'))
 face.writerow(['POST_ID','TEXTO','LIKES'])
 
 for post in get_posts('ugbstoreoficial', pages=5, ):
