@@ -5,7 +5,7 @@ import csv
 face = csv.writer(open('biblioteca.csv','w'))
 face.writerow(['POST_ID','TEXTO','LIKES','IMAGE'])
 
-for post in get_posts('bibliotecaugb ', pages=5, ):
+for post in get_posts('bibliotecaugb ', pages=7, ):
     #print(post.keys())
     print(post['post_id'], post['text'], post['likes'], post['image'], sep="-")
     try:
